@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app = "itri">
+    <head>
+        <meta charset="utf-8">
+        <title>iTri</title>
+        <link rel="stylesheet" href="styles/fonts.css">
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body ng-controller="mainCtrl">
+        <!-- {{test}} -->
+        <main role="main">
+            <section class="home-page-top-container">
+                <header>
+                    <nav>
+                        <ul>
+                            <li><a ui-sref='home'><img src="./images/iTRI.svg" alt="iTri Logo"></a></li>
+                            <li><a ui-sref='log-swim'>Log Swim</a></li>
+                            <li><a ui-sref='log-bike'>Log Bike</a></li>
+                            <li><a ui-sref='log-run'>Log Run</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <h1 class="intro-text">iTri</h1>
+            </section>
+
+            <ui-view></ui-view>
+
+
+        </main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+        <script src="/js/app.js"></script>
+        <script src="js/mainCtrl.js"></script>
+        <script src="services/mainSrvc.js"></script>
+    </body>
+</html>
