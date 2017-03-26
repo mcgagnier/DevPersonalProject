@@ -5,6 +5,8 @@
         <title>iTri</title>
         <link rel="stylesheet" href="styles/fonts.css">
         <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/home.css">
+
     </head>
     <body ng-controller="mainCtrl">
         <!-- {{test}} -->
@@ -14,13 +16,13 @@
                     <nav>
                         <ul>
                             <li><a ui-sref='home'><img src="./images/iTRI.svg" alt="iTri Logo"></a></li>
-                            <li><a ui-sref='log-swim'>Log Swim</a></li>
-                            <li><a ui-sref='log-bike'>Log Bike</a></li>
-                            <li><a ui-sref='log-run'>Log Run</a></li>
+                            <li><a ui-sref='log-swim'>Swim</a></li>
+                            <li><a ui-sref='log-bike'>Bike</a></li>
+                            <li><a ui-sref='log-run'>Run</a></li>
                         </ul>
                     </nav>
+                    <b class="intro-text">iTri</b>
                 </header>
-                <h1 class="intro-text">iTri</h1>
             </section>
 
             <ui-view></ui-view>

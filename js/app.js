@@ -1,9 +1,9 @@
-angular.module('itri', ['ui-router'])
+angular.module('itri', ['ui.router'])
 .config(function ($stateProvider, $urlRouterProvider) {
         $stateProvider
                  .state('home',{
                      url:'/',
-                     templateUrl: "../views/log-run.html"
+                     templateUrl: "../views/home.html"
                  })
                  .state('log-run',{
                      url:'/log-run',
@@ -24,7 +24,8 @@ angular.module('itri', ['ui-router'])
                  //
                 //  })
 
-                 });
 
-        // $urlRouterProvider
-        //     .otherwise('/');
+
+        $urlRouterProvider
+            .otherwise('/');
+            });

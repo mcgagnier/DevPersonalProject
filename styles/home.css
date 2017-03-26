@@ -1,0 +1,14 @@
+.profile {
+    background-color: orange;
+    float: none;
+    flex: none;
+    padding: 50px 30px 50px 75px;
+}
+
+.profile-pic {
+    padding: 50 30 30 50;
+    max-width: 500px;
+    height: 150px;
+    background-color: powderblue;
+    border: 10px solid white;
+}
