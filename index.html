@@ -6,6 +6,8 @@
         <link rel="stylesheet" href="styles/fonts.css">
         <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="styles/home.css">
+        <link rel="stylesheet" href="styles/login.css">
+
 
     </head>
     <body ng-controller="mainCtrl">
@@ -15,13 +17,16 @@
                 <header>
                     <nav>
                         <ul>
-                            <li><a ui-sref='home'><img src="./images/iTRI.svg" alt="iTri Logo"></a></li>
-                            <li><a ui-sref='log-swim'>Swim</a></li>
-                            <li><a ui-sref='log-bike'>Bike</a></li>
-                            <li><a ui-sref='log-run'>Run</a></li>
+                            <!-- <li><a ui-sref='home'><img src="./images/iTRI.svg" alt="iTri Logo"></a></li> -->
+                            <a ui-sref='login'>Login</a>
+                            <a ui-sref='new-user'>Create Account</a>
+                            <a ui-sref='log-swim'>Swim</a>
+                            <a ui-sref='log-bike'>Bike</a>
+                            <a ui-sref='log-run'>Run</a>
                         </ul>
                     </nav>
-                    <b class="intro-text">iTri</b>
+                    <img a ui-sref='home' class="icon" src="./images/iTRI.svg" alt="">
+                    <!-- <b class="intro-text">iTri</b> -->
                 </header>
             </section>
 

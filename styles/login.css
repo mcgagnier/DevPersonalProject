@@ -1,0 +1,36 @@
+.form-group {
+    padding: 10px 30px 30px 30px;
+    background-color: #05B0FA;
+    border-top: 6px solid #FAC905;
+    border-bottom: 6px solid #FAC905;
+
+}
+.btn {
+    font-size: 15px;
+    margin: 30px 0px 0px 10px;
+    padding: 5px 25px
+
+}
+.home-body {
+    background-color: #FAC905;
+}
+.create-input {
+    font-size: 17px;
+    padding: 5px 400px 5px 5px;
+    margin: 20px 0px 0px 10px;
+}
+.login-input {
+    font-size: 17px;
+    padding: 5px 400px 5px 5px;
+    margin: 0px 0px 0px 10px;
+}
+.login-sm {
+    font-size: 17px;
+    padding: 5px 30px 5px 5px;
+    margin: 20px 0px 0px 10px;
+}
+.login-lg {
+    font-size: 17px;
+    padding: 5px 800px 5px 5px;
+    margin: 0px 0px 0px 10px;
+}
