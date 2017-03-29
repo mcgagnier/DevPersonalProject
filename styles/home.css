@@ -1,8 +1,33 @@
+.form-group {
+    padding: 20px 30px 20px 70px;
+    background-color: #05B0FA;
+}
+
+.login-input {
+    font-size: 17px;
+    padding: 5px 170px 5px 5px;
+    margin: 0px 0px 0px 10px;
+}
+.btn {
+    font-size: 15px;
+    margin: 0px 0px 0px 10px;
+    padding: 5px 25px;
+}
+
+.home-body {
+    background-color: #FAC905;
+}
+
+
 .profile {
-    background-color: orange;
-    float: none;
-    flex: none;
+    flex-direction: column;
     padding: 50px 30px 50px 75px;
+    display: flex;
+    justify-content: space-around;;
+}
+.profile-text {
+    display: flex;
+    flex-direction: row:
 }
 
 .profile-pic {
@@ -10,5 +35,21 @@
     max-width: 500px;
     height: 150px;
     background-color: powderblue;
-    border: 10px solid white;
+    border: 6px solid #05B0FA;
+    border-radius: 8px;
+}
+
+.name-age {
+    font-size: 30px;
+}
+.desc {
+    font-size: 25px;
+}
+.profile-div {
+    padding: 20px 20px
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
 }
