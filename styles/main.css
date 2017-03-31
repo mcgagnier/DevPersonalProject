@@ -1,3 +1,5 @@
+var yelo = "#FAC905"
+
 html, body {
   margin: 0;
   padding: 0;
@@ -21,7 +23,7 @@ b {
     height: 30vh;
     min-height: 300px;
     position: relative;
-    background: url('../../images/swim.jpg') center no-repeat;
+    background: url('../../images/tri.jpg') center no-repeat;
     background-size: cover;
     text-align: center;
     display: flex;
@@ -50,8 +52,8 @@ b {
 }
 
 .icon {
-    width: 35%;
-    padding-top: 30px;
+    width: 45%;
+    padding-top: 5px;
 }
 .intro-text {
     font-size: 10rem;

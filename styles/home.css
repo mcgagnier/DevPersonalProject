@@ -34,25 +34,3 @@
     justify-content: space-around;
     flex-direction: row;
 }
-
-.swim-stats {
-    background: url('../../images/swim.jpg') center no-repeat;
-    /*display: flex;
-    justify-content: space-around;
-    flex-direction: column;*/
-}
-.center {
-align-items: baseline;
-}
-
-table, td {
-    border: 1px solid black;
-    font-size: 30px;
-    font-family: 'Arimo', sans-serif;
-    padding: 10;
-    color: #FAC905;
-}
-table, tr {
-    align-self: center;
-    padding: 30px;
-}

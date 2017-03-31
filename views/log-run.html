@@ -1,9 +1,20 @@
-<div class="login">
+<div class="log-run">
     <div class="form-group">
          <input type="text" class="login-sm" ng-model="user.username" placeholder="date" >
          <input type="text" class="login-sm" ng-model="user.password" placeholder="distance" >
          <input type="text" class="login-sm" ng-model="user.password" placeholder="time" >
          <input type="text" class="login-input" ng-model="user.password" placeholder="how was your run?" >
-         <button class="btn" ng-click="Login"> Save Ride </button>
+         <button class="btn" ng-click="Login"> Save Run </button>
     </div>
-    <img src="../images/run.jpg" alt="Run Image">
+    <!-- <img src="../images/run.jpg" alt="Run Image"> -->
+    <div class="stats-contain">
+        <table>
+            <tr class="" ng-repeat="stat in stats">
+                <td b class="center"> {{stat.date}}</td>
+                <td class="center"> {{stat.code}}</td>
+                <td class="center"> {{stat.distance}}</td>
+                <td class="center"> {{stat.time}}</td>
+                <td class="center"> {{stat.desc}}</td>
+            </tr>
+        </table>
+    </div>
