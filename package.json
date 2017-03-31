@@ -1,0 +1,26 @@
+{
+  "name": "itri",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcgagnier/DevPersonalProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcgagnier/DevPersonalProject/issues"
+  },
+  "homepage": "https://github.com/mcgagnier/DevPersonalProject#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cors": "^2.8.1",
+    "express": "^4.15.2",
+    "massive": "^2.6.0",
+    "session": "^0.1.0"
+  }
+}
