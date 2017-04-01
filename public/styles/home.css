@@ -1,36 +1,42 @@
 
 .profile {
-    flex-direction: column;
+    flex-direction: row;
     padding: 50px 30px 50px 75px;
     display: flex;
-    justify-content: space-around;;
+    justify-content: center;
+}
+.profile-div {
+    padding: 0px 30px;
 }
 .profile-text {
     display: flex;
-    flex-direction: row:
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .profile-pic {
     padding: 50 30 30 50;
     max-width: 500px;
-    height: 150px;
+    height: 200px;
     background-color: powderblue;
     border: 6px solid #05B0FA;
     border-radius: 8px;
+    display: flex;
+    flex-direction: row;
 }
 
 .name-age {
-    font-size: 30px;
+    font-size: 40px;
 }
 .desc {
-    font-size: 25px;
+    font-size: 35px;
 }
-/*.profile-div {
-    padding: 20px 20px
-}*/
 
 .stats {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
+}
+.home-body {
+    background-color: #FAC905;
 }

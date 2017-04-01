@@ -1,5 +1,3 @@
-var yelo = "#FAC905"
-
 html, body {
   margin: 0;
   padding: 0;
@@ -10,13 +8,15 @@ html, body {
 a {
     text-decoration: none;
     color: #FAC905;
+    font-weight: 600;
+
 }
 
 b {
     text-decoration: none;
-    color: #fff;
+    color: #FAC905;
     font-family: 'Arimo', sans-serif;
-    font-weight: 600;
+    font-weight: 800;
 }
 .home-page-top-container {
     width: 100%;
