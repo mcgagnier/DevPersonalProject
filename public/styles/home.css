@@ -39,4 +39,7 @@
 }
 .home-body {
     background-color: #FAC905;
+    border-top: 10px solid #05B0FA;
+    border-bottom: 10px solid #05B0FA;
+
 }
