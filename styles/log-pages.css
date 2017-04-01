@@ -40,3 +40,29 @@ table, td {
 .log-bike {
     background-color: #565656;
 }
+.bg-image-bike {
+    width: 100%;
+    height: 30vh;
+    min-height: 900px;
+    position: relative;
+    background: url('../../images/bike.jpg') center no-repeat;
+    background-size: cover;
+
+}
+.bg-image-swim {
+    width: 100%;
+    height: 30vh;
+    min-height: 700px;
+    position: relative;
+    background: url('../../images/swim_full.jpg') center no-repeat;
+    background-size: cover;
+
+}
+.bg-image-run {
+    width: 100%;
+    height: 30vh;
+    min-height: 700px;
+    position: relative;
+    background: url('../../images/run_full.jpg') center no-repeat;
+    background-size: cover;
+}
