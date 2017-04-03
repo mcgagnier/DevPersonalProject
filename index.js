@@ -7,17 +7,8 @@ var connectionString = "postgres://gagnier@localhost/itri";
 var passport = require('passport');
 var Strategy = require('passport-http').BasicStrategy;
 
-passport.use(new Strategy(
-  function(username, password, cb) {
-    var found = users.filter((user) => user.username === username);
-    if (found.length === 1) {
-        var user = found[0];
-        if (user.password === password) return cb(null, user);
-        else return cb(null, false);
-    } else {
-        return cb(null,false);
-    }
-}));
+var connectionString = "postgres://gagnier@localhost/itri";
+var massiveInstance = massive.connectSync({connectionString : connectionString})
 
   var users = [{
       username: 'mcgagnier',
@@ -177,8 +168,8 @@ var workouts = [{
 
 
 // app.use(express.logger());
-
-
+app.set('db', massiveInstance)
+var db = app.get('db');
 var app = module.exports = express();
 app.use(bodyParser.json());
 app.use(cors());
@@ -193,3 +184,28 @@ app.get('/api/user',
   function(req, res) {
     res.json(req.user);
   });
+
+  passport.use(new Strategy(
+    function(username, password, cb) {
+        db.select_user([username, password], (err, res) => {
+            if (err || res.length === 0) return cb(null, false);
+            else {
+                var user = res[0];
+                return cb(null, {
+                    username: username,
+                    name: user.name,
+                    image: user.photo,
+                    desc: user.bio,
+                    age: user.age
+                });
+            }
+        });
+    //   var found = users.filter((user) => user.username === username);
+    //   if (found.length === 1) {
+    //       var user = found[0];
+    //       if (user.password === password) return cb(null, user);
+    //       else return cb(null, false);
+    //   } else {
+    //       return cb(null,false);
+    //   }
+  }));
