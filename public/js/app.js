@@ -2,7 +2,7 @@ angular.module('itri', ['ui.router'])
 .config(function ($stateProvider, $urlRouterProvider) {
         $stateProvider
                  .state('home',{
-                     url:'/',
+                     url:'/home',
                      templateUrl: "../views/home.html"
                  })
                  .state('new-user',{
@@ -10,7 +10,7 @@ angular.module('itri', ['ui.router'])
                      templateUrl: "../views/new-user.html"
                  })
                  .state('login',{
-                     url:'/login',
+                     url:'/',
                      templateUrl: "../views/login.html"
                  })
                  .state('log-run',{
@@ -26,12 +26,7 @@ angular.module('itri', ['ui.router'])
                      templateUrl: "../views/log-bike.html"
 
                  })
-                //  .state('packages',{
-                //      url:'/packages',
-                //      templateUrl: "../views/packages.html",
-                //      controller: 'packagesCtrl'
-                 //
-                //  })
+
 
 
 
