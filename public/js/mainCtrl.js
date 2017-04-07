@@ -12,9 +12,14 @@ angular.module('itri').controller('mainCtrl', function($scope, mainSrvc, $http){
             }
         }).then(function(response){
             $scope.user = response.data;
-            $state.go('home');
         });
     }
+
+    $scope.getWorkouts = function () {
+        mainSrvc.getWorkouts().then(function(response) {
+        $scope.stats = response;
+    })
+}
 
 
 

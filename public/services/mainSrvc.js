@@ -1,53 +1,19 @@
-angular.module('itri').service('mainSrvc', function(){
+angular.module('itri').service('mainSrvc', function($http){
 
     this.testData = "Can you hear me now????"
 
-    // this.sampleUserData = [{
-    //     username: 'mcgagnier',
-    //     password: 'kleinguy',
-    //     name: 'Chris Gagnier',
-    //     image: "../images/me.jpg",
-    //     desc: "I'm just a guy training for my first tri",
-    //     id: 1111,
-    //     age: 49
-    //
-    // }, {
-    //     username: 'tracierey',
-    //     passworld: 'gingerberry',
-    //     name: 'Tracie Gagnier',
-    //     image: "./images/tracie.jpg",
-    //     desc: "I'm just a girl training for my first half-marathon",
-    //     id: 1112,
-    //     age: 51
-    //
-    // },{
-    //     username: 'slaymaker',
-    //     password: '0127953jrol',
-    //     name: 'Dyllon Gagnier',
-    //     image: "./images/dyllonR.jpg",
-    //     desc: "I'm just a dude training for my first duathalon",
-    //     id: 1113,
-    //     age: 22
-    //
-    // },{
-    //     username: 'The Pudd',
-    //     password: 'serveme',
-    //     name: 'Puddie',
-    //     image: "./images/Puddie.jpg",
-    //     desc: "I'm just a cat training for a really long nap",
-    //     id: 1113,
-    //     age: 15
-    //
-    // },{
-    //     username: 'Dolly',
-    //     name: 'Molly',
-    //     password: 'nanna',
-    //     image: "./images/Molly.jpg",
-    //     desc: "I'm just a dog training for my favorite treats",
-    //     id: 1113,
-    //     age: 3
-    //
-    // },]
+    this.getWorkouts = function() {
+        return $http({
+            method: 'GET',
+            url: 'http://localhost:8686/api/workouts'
+        }).then(function(response){
+            stats = response.data;
+            return stats;
+        });
+    }
+
+
+
 
     this.sampleStats = [{
         username: 'mcgagnier',
