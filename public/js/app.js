@@ -15,16 +15,18 @@ angular.module('itri', ['ui.router'])
                  })
                  .state('log-run',{
                      url:'/log-run',
-                     templateUrl: "../views/log-run.html"
+                     templateUrl: "../views/log-run.html",
+                     controller: 'mainCtrl'
                  })
                  .state('log-swim',{
                      url:'/log-swim',
-                     templateUrl: "../views/log-swim.html"
+                     templateUrl: "../views/log-swim.html",
+                     controller: 'mainCtrl'
                  })
                  .state('log-bike',{
                      url:'/log-bike',
-                     templateUrl: "../views/log-bike.html"
-
+                     templateUrl: "../views/log-bike.html",
+                     controller: 'mainCtrl'
                  })
 
 

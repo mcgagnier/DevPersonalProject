@@ -36,14 +36,19 @@ table, td {
 .log-run {
     background-color: black;
     height: 900px;
+    background-size: cover;
 }
 .log-swim {
     background-color: black;
     height: 900px;
+    background-size: cover;
+
 }
 .log-bike {
     background-color: black;
     height: 900px;
+    background-size: cover;
+
 
 }
 .bg-image-bike {

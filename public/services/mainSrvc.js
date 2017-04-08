@@ -2,13 +2,13 @@ angular.module('itri').service('mainSrvc', function($http){
 
     this.testData = "Can you hear me now????"
 
-    this.getWorkouts = function() {
+    this.createWorkout = function(newWorkout) {
         return $http({
-            method: 'GET',
-            url: 'http://localhost:8686/api/workouts'
+            method: 'POST',
+            url: '/api/workouts',
+            data: newWorkout
         }).then(function(response){
-            stats = response.data;
-            return stats;
+            return response;
         });
     }
 
