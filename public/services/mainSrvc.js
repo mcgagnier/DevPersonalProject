@@ -9,6 +9,18 @@ angular.module('itri').service('mainSrvc', function($http){
             data: newWorkout
         }).then(function(response){
             return response;
+            colsole.log(response);
+
+        });
+    }
+    this.createUser = function(newUser) {
+        return $http({
+            method: 'POST',
+            url: '/api/user',
+            data: newUser
+        }).then(function(response){
+            return response;
+            colsole.log(response);
         });
     }
 

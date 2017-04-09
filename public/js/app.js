@@ -7,7 +7,9 @@ angular.module('itri', ['ui.router'])
                  })
                  .state('new-user',{
                      url:'/new-user',
-                     templateUrl: "../views/new-user.html"
+                     templateUrl: "../views/new-user.html",
+                    //  controller: 'NewUserCtrl'
+
                  })
                  .state('login',{
                      url:'/',

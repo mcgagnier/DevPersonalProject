@@ -7,6 +7,8 @@ var connectionString = "postgres://gagnier@localhost/itri";
 var passport = require('passport');
 var Strategy = require('passport-http').BasicStrategy;
 var WorkoutsCtrl = require('./controllers/WorkoutsCtrl');
+var NewUserCtrl = require('./controllers/NewUserCtrl');
+
 var connectionString = "postgres://gagnier@localhost/itri";
 var massiveInstance = massive.connectSync({connectionString : connectionString})
 
@@ -36,7 +38,7 @@ app.get('/api/user',
   function(req, res) {
 
     req.session.user = req.user;
-    
+
     res.json(req.user);
   });
 
@@ -60,3 +62,5 @@ app.get('/api/user',
 
   app.get("/api/workouts", WorkoutsCtrl.getWorkouts(app));
   app.post("/api/workouts", WorkoutsCtrl.createWorkout(app));
+
+  app.post("/api/user", NewUserCtrl.createUser(app));
