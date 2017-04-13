@@ -34,9 +34,9 @@ angular.module('itri').controller('mainCtrl', function($scope, mainSrvc, $http){
         })
     }
 
-    $scope.createUser = function(user) {
-        console.log('hello', user)
-        mainSrvc.createUser(user).then(function(response) {
+    $scope.createUser = function(newUser) {
+        console.log('hello', newUser)
+        mainSrvc.createUser(newUser).then(function(response) {
             console.log(987654321, response);
         })
     }

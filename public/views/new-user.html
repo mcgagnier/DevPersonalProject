@@ -1,19 +1,19 @@
 <div class="login">
     <div class="form-group">
-         <input type="text" class="login-input" ng-model="user.username" placeholder="username" >
-         <input type="text" class="login-input" ng-model="user.password" placeholder="password" >
-         <input type="text" class="login-sm" ng-model="user.age" placeholder="age" >
+         <input type="text" class="login-input" ng-model="newUser.username" placeholder="username" >
+         <input type="text" class="login-input" ng-model="newUser.password" placeholder="password" >
+         <input type="text" class="login-sm" ng-model="newUser.age" placeholder="age" >
          <br>
-         <input type="text" class="login-input" ng-model="user.name" placeholder="name" >
-         <input type="text" class="login-input" ng-model="user.image" placeholder="image url" >
-         <input type="text" class="login-sm" ng-model="user.email" placeholder="email" >
+         <input type="text" class="login-input" ng-model="newUser.name" placeholder="name" >
+         <input type="text" class="login-input" ng-model="newUser.photo" placeholder="image url" >
+         <input type="text" class="login-sm" ng-model="newUser.email" placeholder="email" >
 
          <br>
 
          <br>
-         <input type="text" class="login-lg" ng-model="user.desc" placeholder="say something about yourself" >
+         <input type="text" class="login-lg" ng-model="newUser.bio" placeholder="say something about yourself" >
          <br>
-         <button class="btn" ng-click="createUser(user)" ui-sref="home"> Login </button>
+         <button class="btn" ng-click="createUser(newUser)" ui-sref="login"> Create User </button>
          <!-- <button class="btn" ng-click="CreateAccount"> Create New Account </button> -->
     </div>
 <div class="bg-image-swim">
