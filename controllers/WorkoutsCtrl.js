@@ -1,5 +1,5 @@
 module.exports = {
-    getWorkouts: function (app) {
+        getWorkouts: function (app) {
         var db = app.get('db');
         return function(req, res) {
             console.log('gettting workouts');

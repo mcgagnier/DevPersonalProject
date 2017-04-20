@@ -27,7 +27,6 @@ angular.module('itri').controller('mainCtrl', function($scope, mainSrvc, $http){
 
     $scope.createWorkout = function(newWorkout, workoutType) {
         console.log('hi', newWorkout)
-        //TAKE THIS OUT RIGHT BELOW HERE
         newWorkout.workoutType = workoutType
         mainSrvc.createWorkout(newWorkout).then(function(response) {
             // console.log(987654321, response);
@@ -41,6 +40,19 @@ angular.module('itri').controller('mainCtrl', function($scope, mainSrvc, $http){
         })
     }
 
+    // $scope.getWorkouts = function(user) {
+    //     console.log"('hello', getWorkouts)"
+    //     mainSrvc.getWorkouts(workouts).then(function(response) {
+    //         console.log(333333333, response);
+    //     })
+    // }
+
+    $scope.getWorkouts = function() {
+        console.log("hello workouts");
+    mainSrvc.getWorkoutData().then(function(response) {
+        console.log(123456, response)
+    })
+}
 
 
 $scope.users = mainSrvc.sampleUserData;
