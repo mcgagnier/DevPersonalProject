@@ -1,8 +1,12 @@
 module.exports = {
-        getWorkouts: function (app) {
+    getWorkouts: function (app) {
         var db = app.get('db');
         return function(req, res) {
-            console.log('gettting workouts');
+            var username = req.session.user.username;
+            db.getWorkouts([username], function(err, response) {
+                console.log(response)
+                res.send(response);
+            })
         }
     },
 

@@ -51,12 +51,16 @@ angular.module('itri').controller('mainCtrl', function($scope, mainSrvc, $http){
         console.log("hello workouts");
     mainSrvc.getWorkoutData().then(function(response) {
         console.log(123456, response)
+        stats = response;
+        console.log(78910, stats)
+
+
     })
 }
 
 
 $scope.users = mainSrvc.sampleUserData;
 
-$scope.stats = mainSrvc.sampleStats;
+// $scope.stats = mainSrvc.stats;
 
 });

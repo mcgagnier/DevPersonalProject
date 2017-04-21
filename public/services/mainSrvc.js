@@ -23,14 +23,15 @@ angular.module('itri').service('mainSrvc', function($http, $q){
             colsole.log(response);
         });
     }
-    this.getWorkouts = function() {
+    this.getWorkoutData = function(user) {
         console.log('workouts service');
         var deferred = $q.defer();
         return $http({
             method: 'GET',
             url: 'http://localhost:8686/api/workouts'
         }).then(function(response){
-            $scope.stats = response.data;
+            console.log('workouts coming here', response)
+            stats = response.data;
             return stats
         });
     }
