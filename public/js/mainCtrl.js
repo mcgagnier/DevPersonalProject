@@ -49,9 +49,9 @@ angular.module('itri').controller('mainCtrl', function($scope, mainSrvc, $http){
 
     $scope.getWorkouts = function() {
         console.log("hello workouts");
-    mainSrvc.getWorkoutData().then(function(response) {
+        mainSrvc.getWorkoutData().then(function(response) {
         console.log(123456, response)
-        stats = response;
+        $scope.stats = response;
         console.log(78910, stats)
 
 
