@@ -24,11 +24,11 @@
             <table>
                 <!-- <tr class="" ng-repeat="stat in stats | filter: 'Run'"> -->
                 <tr class="" ng-repeat="stat in stats">
-                    <td class="center"> {{stat.date}}</td>
+                    <td class="center"> {{stat.date | date: 'shortDate'}}</td>
                     <td class="center"> {{stat.workout_type}}</td>
                     <td class="center"> {{stat.distance}}</td>
                     <td class="center"> {{stat.time}}</td>
-                    <td class="center"> {{stat.desc}}</td>
+                    <td class="center"> {{stat.description}}</td>
                 </tr>
             </table>
         </div>

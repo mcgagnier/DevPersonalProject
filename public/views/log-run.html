@@ -6,8 +6,6 @@
         <input type="text" class="login-input" ng-model="workout.desc" placeholder="how was your run?" >
         <button class="btn" ng-click="createWorkout(workout, 'run')"> Save Run </button>
         <div class="">
-            <button class="btn" ng-click='getWorkouts'> Get Workouts  </button>
-
 
         </div>
     </div>
@@ -15,11 +13,11 @@
     <div class="stats-contain">
         <table>
             <tr class="" ng-repeat="stat in stats | filter: 'Run'">
-                <td b class="center"> {{stat.date}}</td>
+                <td b class="center"> {{stat.date | date: 'shortDate'}}</td>
                 <td class="center"> {{stat.code}}</td>
                 <td class="center"> {{stat.distance}}</td>
                 <td class="center"> {{stat.time}}</td>
-                <td class="center"> {{stat.desc}}</td>
+                <td class="center"> {{stat.description}}</td>
             </tr>
         </table>
     </div>

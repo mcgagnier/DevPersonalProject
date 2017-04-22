@@ -36,22 +36,22 @@ angular.module('itri').service('mainSrvc', function($http, $q){
         });
     }
 
-    this.sampleStats = [{
-        username: 'mcgagnier',
-        code: 'Run',
-        date: "3/26/17",
-        distance: "6.1",
-        time: 66,
-        desc: "Great training run"
-
-    },{
-        username: 'mcgagnier',
-        code: 'Bike',
-        date: "3/25/17",
-        distance: "11.38",
-        time: 44,
-        desc: "Great training ride"
-    }
-
-]
+//     this.sampleStats = [{
+//         username: 'mcgagnier',
+//         code: 'Run',
+//         date: "3/26/17",
+//         distance: "6.1",
+//         time: 66,
+//         desc: "Great training run"
+//
+//     },{
+//         username: 'mcgagnier',
+//         code: 'Bike',
+//         date: "3/25/17",
+//         distance: "11.38",
+//         time: 44,
+//         desc: "Great training ride"
+//     }
+//
+// ]
 })

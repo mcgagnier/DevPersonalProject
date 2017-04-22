@@ -4,6 +4,8 @@ angular.module('itri').controller('mainCtrl', function($scope, mainSrvc, $http){
     $scope.newUser = {};
 
 
+
+
     $scope.currentUser = function(user) {
         var authHeader = btoa(user.username + ':' + user.password);
         return $http({
@@ -50,9 +52,8 @@ angular.module('itri').controller('mainCtrl', function($scope, mainSrvc, $http){
     $scope.getWorkouts = function() {
         console.log("hello workouts");
         mainSrvc.getWorkoutData().then(function(response) {
-        console.log(123456, response)
         $scope.stats = response;
-        console.log(78910, stats)
+        // console.log(78910, stats)
 
 
     })

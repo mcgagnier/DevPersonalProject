@@ -4,16 +4,16 @@
         <input type="text" class="login-sm" ng-model="workout.distance" placeholder="distance (meters)" >
         <input type="text" class="login-sm" ng-model="workout.time" placeholder="time (minutes)" >
         <input type="text" class="login-input" ng-model="workout.desc" placeholder="how was your swim?" >
-        <button class="btn" ng-click="createWorkout(workout, 'swim')"> Save Swim </button>
+        <button class="btn" ng-click="createWorkout(workout, 'swim'); getWorkouts()"> Save Swim </button>
     </div>
     <div class="stats-contain">
         <table>
             <tr class="" ng-repeat="stat in stats | filter: 'Swim'">
-                <td b class="center"> {{stat.date}}</td>
+                <td b class="center"> {{stat.date | date: 'shortDate'}}</td>
                 <td class="center"> {{stat.code}}</td>
                 <td class="center"> {{stat.distance}}</td>
                 <td class="center"> {{stat.time}}</td>
-                <td class="center"> {{stat.desc}}</td>
+                <td class="center"> {{stat.description}}</td>
             </tr>
         </table>
     </div>

@@ -1,3 +1,14 @@
+
+/* #FF652F  Orange*/
+/* #272727 Black*/
+/* #747474 Lt Gray*/
+/* FFE400 Yelo*/
+/* #14A76C Green*/
+/* #32CD32 Lime Green*/
+/* #05B0FA Blue*/
+
+
+
 .stats-contain {
     padding: 30px;
     width: 100%;
@@ -6,9 +17,9 @@
 }
 .form-group {
     padding: 10px 30px 30px 30px;
-    background-color: #05B0FA;
-    border-top: 6px solid #FAC905;
-    border-bottom: 6px solid #FAC905;
+    background-color: Black;
+    border-top: 3px solid #747474;
+    border-bottom: 3px solid #747474;
 
 }
 .center {
@@ -26,7 +37,7 @@ table, td {
     font-size: 30px;
     font-family: 'Arimo', sans-serif;
     padding: 8px 30px;
-    color: #FAC905;
+    color: white;
     margin: 0px 0px;
     font-weight: 500;
 
@@ -34,18 +45,18 @@ table, td {
 
 
 .log-run {
-    background-color: black;
+    background-color: #272727;
     height: 900px;
     background-size: cover;
 }
 .log-swim {
-    background-color: black;
+    background-color: #272727;
     height: 900px;
     background-size: cover;
 
 }
 .log-bike {
-    background-color: black;
+    background-color: #272727;
     height: 900px;
     background-size: cover;
 
